@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav id="navbar">
+            <img src="logo.png" class="logo">
+            <ul id="menu">
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>SERVICES</li>
+                <li>PRODUCT</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <p>YouTube Family Link allows you to control settings on YouTube Kids including the content level setting you want for your child, and if you want your child to use the search function. Find out more here:
+
+        In 2021 YouTube introduced Supervised Experiences on YouTube. This feature is for parents who want to allow their child to transition from YouTube Kids to supervised access to the main YouTube platform. Via a Supervised Google Account the feature will offer parents the ability to choose from 3 different content settings on YouTube.
+        
+        Explore: For children ready to move on from YouTube Kids and explore content on YouTube, this setting will feature a broad range of videos generally suitable for viewers ages 9+, including vlogs, tutorials, gaming videos, music clips, news, educational content and more.
+        
+        Explore More: With content generally suitable for viewers ages 13+, this setting will include an even larger set of videos, and also live streams in the same categories as “Explore.”</p>
+
+
+    <p>YouTube has a Safety mode, a setting which gives users the opportunity to bar mature content. It is an “opt-in” setting, which means that it won’t take effect until you switch it on. The setting filters search results to remove videos with mature content or videos that have been age-restricted, meaning that such content will not show up in video searches, related videos, playlists, shows or movie sections. While no filtering system is 100 percent accurate, we recommend that parents of young children enable this feature.</p>    
+
+    <p>When a user uploads a video to YouTube, by default the video is set to public, which means anyone can see the video. Depending on the age of your child, you should discuss what settings are best to use if your child is uploading footage to YouTube. You can easily switch videos to private or unlisted (published on YouTube but cannot be found without a direct link to the video).
+
+        You can also invite people to view your videos using Google Circles. Please note, you need to link your channel with Google+ in order to share a private video with other users. Click here for info on how to connect a YouTube channel to a Google+ profile.</p>
+
+    <p>YouTube is a free to use service and a can be a great space for teens to discover things they like. For many young people, YouTube is used to watch music videos, comedy shows, how to guides, recipes, hacks and more. Teens also use the video-sharing service to follow their favourite vloggers (video blogger), subscribe to other YouTubers and celebrities they are interested in.</p>    
+
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+
+        window.onscroll = function(){
+            if(window.pageYOffset >=menu.offsetTop){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+</body>
+</html>
